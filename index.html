@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="heading">
+      <h1>Etch-a-Sketch</h1>
+    </header>
+    <div class="options">
+      <label for="clear"></label>
+      <button class="option" id="clear">Clear</button>
+      <label for="eraser"></label>
+      <button class="option" id="eraser">Eraser</button>
+      <label for="size">Size: </label>
+      <input
+        class="size option"
+        id="size"
+        type="range"
+        min="1"
+        max="100"
+        value="10"
+        step="1"
+      />
+      <label for="myColor">Color: </label>
+      <input class="option" id="myColor" type="color" value="#FFFFFF" /><br />
+      <label for="rgb"></label>
+      <button class="option" id="rgb">RGB</button>
+    </div>
+    <div class="grid">
+      <div class="container"></div>
+    </div>
+    
+  </body>
+  <script src="./main.js"></script>
+</html>
